@@ -33,7 +33,7 @@ body {
 /* HERO */
 .hero {
   height: 100vh;
-  background: url('https://images.unsplash.com/photo-1445205170230-053b83016050') center/cover no-repeat;
+  background:black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,8 +78,8 @@ body {
 }
 
 .card img {
-  width: 100%;
-  height: 300px;
+  width: 50%;
+  height: 30px;
   object-fit: cover;
   transition: 0.5s;
 }

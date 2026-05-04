@@ -79,7 +79,7 @@ body {
 
 .card img {
   width: 50%;
-  height: 30px;
+  height: 200px;
   object-fit: cover;
   transition: 0.5s;
 }

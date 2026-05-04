@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CJ STORE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header>
+  <h1>CJ</h1>
+  <button onclick="toggleCart()">🛒 Cart (<span id="cart-count">0</span>)</button>
+</header>
+
+<section class="products">
+
+  <div class="card fade-in">
+    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab">
+    <h3>T-Shirt</h3>
+    <p>₦15000</p>
+    <button onclick="addToCart('T-Shirt',15000)">Add to Cart</button>
+  </div>
+
+  <div class="card fade-in">
+    <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246">
+    <h3>Hoodie</h3>
+    <p>₦30000</p>
+    <button onclick="addToCart('Hoodie',30000)">Add to Cart</button>
+  </div>
+
+</section>
+
+<!-- CART -->
+<div id="cart" class="cart">
+  <h2>Your Cart</h2>
+  <div id="cart-items"></div>
+  <h3>Total: ₦<span id="total">0</span></h3>
+  <button onclick="checkout()">Checkout</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
